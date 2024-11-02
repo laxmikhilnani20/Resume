@@ -6,47 +6,7 @@
     <title>Laxmi Khilnani - Data Scientist & Full-Stack Developer</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card {
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .skill-pill {
-            transition: all 0.3s ease;
-        }
-        .skill-pill:hover {
-            transform: scale(1.05);
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #667eea;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .progress-bar {
-            height: 6px;
-            background: linear-gradient(to right, #667eea, #764ba2);
-            border-radius: 3px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-gray-100">
     <!-- Navigation -->
@@ -81,7 +41,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/2" data-aos="fade-right">
-                    <img src="/images/laxmi.jpg" alt="Laxmi Khilnani" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
+                    <img src="./images/laxmi.jpg" alt="Laxmi Khilnani" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left">
                     <h2 class="text-4xl font-bold mb-6">About Me</h2>
@@ -270,17 +230,17 @@
                 <div class="card p-6 rounded-lg" data-aos="fade-up">
                     <h3 class="text-xl font-bold mb-4">Scalable Quiz Application</h3>
                     <p class="mb-4">Developed a high-performance quiz application with React and SQL, optimized for scalability.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300">View Project →</a>
+                    
                 </div>
                 <div class="card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
                     <h3 class="text-xl font-bold mb-4">Blockchain Event Management</h3>
                     <p class="mb-4">Created a secure event verification system using blockchain technology and MongoDB backend.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300">View Project →</a>
+                    
                 </div>
                 <div class="card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="text-xl font-bold mb-4">Responsive Web App</h3>
                     <p class="mb-4">Designed and built a responsive app that evaluates users' EQ/IQ and offers personalized recommendations.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300">View Project →</a>
+                    
                 </div>
             </div>
         </div>
@@ -297,7 +257,7 @@
                     <h3 class="text-xl font-bold mb-2">Effect of AI on the Financial Sector</h3>
                     <p class="text-gray-400 mb-2">ICRITO'2024, Amity University, Noida</p>
                     <p class="text-gray-300 mb-4">This paper explores the transformative impact of AI on the financial sector, detailing applications in risk assessment, fraud detection, and customer personalization.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300">Read Full Paper →</a>
+            
                 </div>
     
                 <!-- Research Card 2: AI and Blockchain for Decentralized E-Voting -->
@@ -305,7 +265,7 @@
                     <h3 class="text-xl font-bold mb-2">AI and Blockchain for Decentralized E-Voting</h3>
                     <p class="text-gray-400 mb-2">ICEEICT 2024</p>
                     <p class="text-gray-300 mb-4">This paper introduces a secure, decentralized voting system using AI and blockchain technologies to ensure transparency and privacy.</p>
-                    <a href="#" class="text-blue-400 hover:text-blue-300">Read Full Paper →</a>
+                    
                 </div>
             </div>
         </div>
@@ -315,9 +275,9 @@
         <div id="modalPaper1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
             <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
                 <h3 class="text-2xl font-bold mb-4">Effect of AI on the Financial Sector</h3>
-                <img src="/images/LaxmiKhilnani_research_paper_certificates.jpg" alt="Certificate for Effect of AI on the Financial Sector" class="w-full rounded-lg mb-4">
+                <img src="./images/LaxmiKhilnani_research_paper_certificates.jpg" alt="Certificate for Effect of AI on the Financial Sector" class="w-full rounded-lg mb-4">
                 <p class="text-gray-300">Certificate of presentation for the research paper titled "Effect of AI on the Financial Sector" presented at ICRITO'2024, Amity University, Noida.</p>
-                <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Read Full Paper →</a>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10522410" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Read Full Paper →</a>
                 <button onclick="closeModal('modalPaper1')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
             </div>
         </div>
@@ -326,22 +286,13 @@
         <div id="modalPaper2" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
             <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
                 <h3 class="text-2xl font-bold mb-4">AI and Blockchain for Decentralized E-Voting</h3>
-                <img src="/images/blockchainwithAI.png" alt="Certificate for AI and Blockchain for Decentralized E-Voting" class="w-full rounded-lg mb-4">
+                <img src="./images/blockchainwithAI.png" alt="Certificate for AI and Blockchain for Decentralized E-Voting" class="w-full rounded-lg mb-4">
                 <p class="text-gray-300">Certificate of presentation for the research paper titled "AI and Blockchain for Decentralized E-Voting" presented at ICEEICT 2024.</p>
-                <a href="#" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Read Full Paper →</a>
+                <a href="#research" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Will be Availabe soon to read online!!</a>
                 <button onclick="closeModal('modalPaper2')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
             </div>
         </div>
     
-        <script>
-            function openModal(id) {
-                document.getElementById(id).classList.remove('hidden');
-            }
-    
-            function closeModal(id) {
-                document.getElementById(id).classList.add('hidden');
-            }
-        </script>
     </section>
     
     <section id="certificates" class="py-20 bg-gray-900">
@@ -410,7 +361,7 @@
 <div id="modal1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Python for Data Science, AI & Development by IBM</h3>
-        <img src="/images/DSbyIbm.png" alt="Python for Data Science, AI & Development by IBM" class="w-full rounded-lg mb-4">
+        <img src="./images/DSbyIbm.png" alt="Python for Data Science, AI & Development by IBM" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Comprehensive data science certification covering statistical analysis, machine learning, and data visualization.</p>
         <button onclick="closeModal('modal1')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -419,7 +370,7 @@
 <div id="modal2" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Introduction to Front-End Development by Meta</h3>
-        <img src="/images/frontend.png" alt="Front-End Development by Meta" class="w-full rounded-lg mb-4">
+        <img src="./images/frontend.png" alt="Front-End Development by Meta" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Web development fundamentals including HTML, CSS, and JavaScript.</p>
         <button onclick="closeModal('modal2')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -429,7 +380,7 @@
 <div id="modal4" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Machine Learning for All by University of London</h3>
-        <img src="/images/Machinelearning.png" alt="Machine Learning for All by University of London" class="w-full rounded-lg mb-4">
+        <img src="./images/Machinelearning.png" alt="Machine Learning for All by University of London" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Fundamentals of machine learning algorithms and applications.</p>
         <button onclick="closeModal('modal4')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -438,7 +389,7 @@
 <div id="modal5" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Excel Fundamentals for Data Analysis by Macquarie University</h3>
-        <img src="/images/excelFundamentals.png" alt="Excel Fundamentals" class="w-full rounded-lg mb-4">
+        <img src="./images/excelFundamentals.png" alt="Excel Fundamentals" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Advanced Excel techniques for data analysis.</p>
         <button onclick="closeModal('modal5')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -447,7 +398,7 @@
 <div id="modal6" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Red Hat System Administration I 9.0</h3>
-        <img src="/images/redhat.png" alt="Red Hat System Administration" class="w-full rounded-lg mb-4">
+        <img src="./images/redhat.png" alt="Red Hat System Administration" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Linux system administration fundamentals.</p>
         <button onclick="closeModal('modal6')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -456,7 +407,7 @@
 <div id="modal7" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Java Fundamentals by Oracle Academy</h3>
-        <img src="/images/oraclejava.png" alt="Java Fundamentals" class="w-full rounded-lg mb-4">
+        <img src="./images/oraclejava.png" alt="Java Fundamentals" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Core Java programming concepts and practices.</p>
         <button onclick="closeModal('modal7')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -465,7 +416,7 @@
 <div id="modalAI" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">Artificial Intelligence Primer Certification by Infosys</h3>
-        <img src="/images/AI_Infosys.png" alt="Artificial Intelligence Primer Certification" class="w-full rounded-lg mb-4">
+        <img src="./images/AI_Infosys.png" alt="Artificial Intelligence Primer Certification" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">This certification introduces fundamental concepts in Artificial Intelligence, including machine learning basics, ethical considerations, and future AI applications.</p>
         <button onclick="closeModal('modalAI')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
@@ -483,28 +434,12 @@
 <div id="modal10" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
     <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
         <h3 class="text-2xl font-bold mb-4">HackerRank Software Engineer Intern</h3>
-        <img src="/images/hackerrank.png" alt="HackerRank Software Engineer Intern" class="w-full rounded-lg mb-4">
+        <img src="./images/hackerrank.png" alt="HackerRank Software Engineer Intern" class="w-full rounded-lg mb-4">
         <p class="text-gray-300">Technical assessment certification for software engineering.</p>
         <button onclick="closeModal('modal10')" class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
     </div>
 </div>
-
-
-    
-        <script>
-            function openModal(id) {
-                document.getElementById(id).classList.remove('hidden');
-            }
-    
-            function closeModal(id) {
-                document.getElementById(id).classList.add('hidden');
-            }
-        </script>
     </section>
-    
-    
-
-    
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-800">
@@ -538,11 +473,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
