@@ -1,24 +1,34 @@
 .gradient-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #1a1f2e;
 }
+
 .card {
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
+    background: #2d3748;
+    border: 1px solid #4a5568;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .skill-pill {
+    background: #3182ce;
     transition: all 0.3s ease;
 }
+
 .skill-pill:hover {
     transform: scale(1.05);
+    background: #2c5282;
 }
+
 .nav-link {
     position: relative;
+    color: #e2e8f0;
 }
+
 .nav-link::after {
     content: '';
     position: absolute;
@@ -26,14 +36,16 @@
     height: 2px;
     bottom: -2px;
     left: 0;
-    background-color: #667eea;
+    background-color: #3182ce;
     transition: width 0.3s ease;
 }
+
 .nav-link:hover::after {
     width: 100%;
 }
+
 .progress-bar {
     height: 6px;
-    background: linear-gradient(to right, #667eea, #764ba2);
+    background: #3182ce;
     border-radius: 3px;
-};
+}
