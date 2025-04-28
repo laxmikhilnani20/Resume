@@ -1,1 +1,41 @@
+// Variables
+$primary-color: #3182ce;
+$secondary-color: #2c5282;
+$background-color: #1a1f2e;
+$text-color: #e2e8f0;
+$transition-duration: 0.3s;
+
+// Mixins
+@mixin transition($properties...) {
+    transition: $properties $transition-duration ease;
+}
+
+// Base Styles
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+}
+
+// Reusable Classes
+.gradient-bg {
+    background: linear-gradient(135deg, $primary-color, $secondary-color);
+}
+
+.card {
+    @include transition(transform, box-shadow);
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.skill-pill {
+    @include transition(transform, background-color);
+    &:hover {
+        transform: scale(1.05);
+        background-color: $secondary-color;
+    }
+}
 

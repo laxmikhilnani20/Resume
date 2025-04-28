@@ -1,11 +1,11 @@
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('.nav-links a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        
+
         // Smooth scroll to the target element
         targetElement.scrollIntoView({
             behavior: 'smooth'
@@ -57,8 +57,22 @@ AOS.init({
 });
 function openModal(id) {
     document.getElementById(id).classList.remove('hidden');
-     }
-    
+}
+
 function closeModal(id) {
     document.getElementById(id).classList.add('hidden');
 }
+
+// Add scroll-to-top button functionality
+const scrollToTopButton = document.createElement('button');
+scrollToTopButton.innerText = '↑';
+scrollToTopButton.classList.add('scroll-to-top');
+document.body.appendChild(scrollToTopButton);
+
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+    scrollToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
