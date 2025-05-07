@@ -25,6 +25,7 @@ body {
 
 .card {
     @include transition(transform, box-shadow);
+
     &:hover {
         transform: translateY(-5px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -33,9 +34,9 @@ body {
 
 .skill-pill {
     @include transition(transform, background-color);
+
     &:hover {
         transform: scale(1.05);
         background-color: $secondary-color;
     }
 }
-

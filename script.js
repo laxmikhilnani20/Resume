@@ -55,6 +55,7 @@ AOS.init({
     duration: 1000,
     once: true,
 });
+
 function openModal(id) {
     document.getElementById(id).classList.remove('hidden');
 }
