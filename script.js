@@ -278,25 +278,48 @@ document.addEventListener('DOMContentLoaded', function () {
     // Counter animation for stats
     const statNumbers = document.querySelectorAll('.stat-number');
 
-    function animateCounter(element, target) {
-        let current = 0;
-        const increment = target / 100;
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                element.textContent = target;
-                clearInterval(timer);
+    function animateCounter(element) {
+        const target = parseFloat(element.getAttribute('data-target'));
+        const suffix = element.getAttribute('data-suffix') || '';
+        const decimals = parseInt(element.getAttribute('data-decimal')) || 0;
+        const duration = 2000; // 2 seconds
+        const startTime = performance.now();
+        
+        function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Use easing function for smooth animation
+            const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+            const current = target * easeOutQuart;
+            
+            if (decimals > 0) {
+                element.textContent = current.toFixed(decimals) + suffix;
             } else {
-                element.textContent = Math.floor(current);
+                element.textContent = Math.floor(current) + suffix;
             }
-        }, 30);
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                // Ensure final value is exact
+                element.textContent = (decimals > 0 ? target.toFixed(decimals) : target) + suffix;
+            }
+        }
+        
+        requestAnimationFrame(updateCounter);
     }
 
     function startCounters() {
         statNumbers.forEach(stat => {
-            const target = parseInt(stat.textContent.replace(/[^\d]/g, ''));
+            const target = parseFloat(stat.getAttribute('data-target'));
             if (!isNaN(target)) {
-                animateCounter(stat, target);
+                // Reset to 0 before animation
+                stat.textContent = '0';
+                // Small delay for staggered effect
+                setTimeout(() => {
+                    animateCounter(stat);
+                }, Math.random() * 200);
             }
         });
     }
