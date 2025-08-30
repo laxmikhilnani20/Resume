@@ -1530,7 +1530,7 @@ body {
 .certificate-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
     opacity: 0;
     animation: fadeIn 0.5s ease-out 0.2s forwards;
@@ -2442,7 +2442,7 @@ body {
     .certificate-image img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .certificate-overlay {
