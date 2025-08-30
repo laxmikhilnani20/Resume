@@ -5,668 +5,1008 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laxmi Khilnani - Data Scientist & Full-Stack Developer</title>
-    <meta name="description" content="Portfolio of Laxmi Khilnani, a Data Scientist & Full-Stack Developer.">
-    <meta name="keywords" content="Data Science, Full-Stack Development, Portfolio, Laxmi Khilnani">
+    <meta name="description"
+        content="Professional portfolio of Laxmi Khilnani, showcasing expertise in Data Science, AI, Machine Learning, and Full-Stack Development.">
+    <meta name="keywords"
+        content="Data Science, Full-Stack Development, AI, Machine Learning, Portfolio, Laxmi Khilnani">
     <meta name="author" content="Laxmi Khilnani">
-    <link rel="icon" href="./images/favicon.ico">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <meta name="robots" content="index, follow">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 text-gray-100">
+<body>
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold gradient-text">LK</a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#research" class="nav-link">Research</a>
-                    <a href="#certificates" class="nav-link">Certificates</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">Laxmi Khilnani</a>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#research" class="nav-link">Research</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center gradient-bg">
-        <div class="text-center" data-aos="fade-up">
-            <h1 class="text-6xl font-bold mb-4">Laxmi Khilnani</h1>
-            <p class="text-2xl mb-4">Aspiring Data Scientist & Full-Stack Developer</p>
-            <p class="mb-8">Nagpur, Maharashtra, India</p>
-            <a href="#contact"
-                class="bg-white text-gray-900 px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition duration-300">Get
-                in Touch</a>
-        </div>
-    </section>
-    <section id="about" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2" data-aos="fade-right">
-                    <img src="./images/laxmi.jpg" alt="Laxmi Khilnani"
-                        class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg">
-                </div>
-                <div class="md:w-1/2" data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-6">About Me</h2>
-                    <p class="text-lg leading-relaxed">
-                        I'm a passionate developer with a solid foundation in full-stack development and data
-                        science. Eager to apply academic knowledge in real-world situations and have a strong interest in modern
-                        technologies like machine learning and blockchain. Looking for opportunities to advance technical skills in various computer science fields
-                        and contribute to innovative projects.
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Laxmi Khilnani</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Full-Stack Developer & Data Scientist
+                    </h2>
+                    <p class="hero-description">
+                        Passionate developer with a solid foundation in full-stack development and data science.
+                        Eager to apply academic knowledge in real-world situations with a strong interest in modern
+                        technologies like machine learning and blockchain.
                     </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <i class="fas fa-briefcase"></i> View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="./images/laxmi.jpg" alt="Laxmi Khilnani" loading="lazy">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">8.38
+                    </div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Internships</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Certifications</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
-            <div class="card p-8 max-w-2xl mx-auto" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-2">Symbiosis International University, Nagpur</h3>
-                <p class="text-xl mb-2">Bachelor's in Technology, Computer Science and Engineering</p>
-                <p class="text-gray-400">2022 – Present</p>
-                <div class="mt-4">
-                    <p class="text-lg">SGPA: 8.95/10.0 <br> CGPA: 8.38/10.0 </p>
-                    <p class="text-sm text-gray-400 mt-2">Relevant Coursework: Data Structures & Algorithms, Operating Systems, Computer Networks, Database Management Systems</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="section-subtitle">Passionate developer with expertise in data science and full-stack
+                    development</p>
+            </div>
+            <div class="summary-content">
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="summary-text">
+                        <h3>Driven by Innovation</h3>
+                        <p>Full-Stack Developer and Data Scientist with a proven track record in machine learning, AI,
+                            and web development. Currently pursuing B.Tech in Computer Science with a CGPA of 8.38/10.0.
+                        </p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="summary-text">
+                        <h3>Technical Excellence</h3>
+                        <p>Skilled in Python, Java, JavaScript, and modern frameworks. Experienced in cloud
+                            technologies, database management, and AI/ML implementation with hands-on project
+                            experience.</p>
+                    </div>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="summary-text">
+                        <h3>Leadership & Impact</h3>
+                        <p>Active leader in CSI and IEEE student chapters, organizing technical events and workshops.
+                            Committed to community service with 120+ hours of volunteering in social initiatives.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Technical Skills</h2>
-
-            <!-- Technical Skills Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="card p-6" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-4">Programming Languages</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg text-center">
-                            Java, C, C++
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-center">
-                            Python, JavaScript
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-4">Web Development</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-center">
-                            HTML, CSS, ReactJS
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-4">Database Management</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-yellow-500 to-red-500 rounded-lg text-center">
-                            SQL, MongoDB
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-red-500 to-yellow-500 rounded-lg text-center">
-                            Data Structures & Algorithms
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-4">Libraries & Frameworks</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg text-center">
-                            Keras, TensorFlow, NLTK
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-teal-500 to-blue-500 rounded-lg text-center">
-                            Pandas, NumPy, Matplotlib
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg text-center">
-                            Scikit-learn, Scipy, Seaborn
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-4">Software & Tools</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg text-center">
-                            IBM SPSS, PowerBI
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg text-center">
-                            Microsoft Finance Excel
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-center">
-                            Unix/Linux (Ubuntu), Windows
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-4">Specializations</h3>
-                    <div class="space-y-4">
-                        <div class="skill-pill p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-center">
-                            Machine Learning, NLP
-                        </div>
-                        <div class="skill-pill p-2 bg-gradient-to-r from-pink-500 to-red-500 rounded-lg text-center">
-                            Data Science, Research
-                        </div>
-                    </div>
-                </div>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
-
-            <!-- Soft Skills -->
-            <h3 class="text-2xl font-bold text-center mb-8">Soft Skills</h3>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
-                <div class="skill-pill p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg text-center">
-                    Problem Solving
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
                 </div>
-                <div class="skill-pill p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-center">
-                    Time Management
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">ReactJS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
                 </div>
-                <div class="skill-pill p-3 bg-gradient-to-r from-pink-500 to-red-500 rounded-lg text-center">
-                    Adaptability
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                    </div>
                 </div>
-                <div class="skill-pill p-3 bg-gradient-to-r from-red-500 to-yellow-500 rounded-lg text-center">
-                    Collaboration
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Scipy</span>
+                        <span class="skill-tag">BeautifulSoup</span>
+                        <span class="skill-tag">OpenCV</span>
+                    </div>
                 </div>
-                <div class="skill-pill p-3 bg-gradient-to-r from-yellow-500 to-green-500 rounded-lg text-center">
-                    Communication
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">IBM SPSS</span>
+                        <span class="skill-tag">PowerBI</span>
+                        <span class="skill-tag">Microsoft Excel</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Specializations</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Natural Language Processing</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Blockchain</span>
+                        <span class="skill-tag">IoT</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Work Experience</h2>
-            <div class="space-y-8 max-w-4xl mx-auto">
-                <div class="card p-6" data-aos="fade-left">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">AI Intern</h3>
-                            <p class="text-blue-400">HumanizeIQ</p>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">My journey in the tech industry</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Intern</h3>
+                            <span class="timeline-date">July 2024 - Present</span>
                         </div>
-                        <p class="text-gray-400">July 2024 – Present</p>
+                        <div class="timeline-company">HumanizeIQ</div>
+                        <ul class="timeline-details">
+                            <li>Worked with Cloudflare and Dify for workflow automation and chat flow development to
+                                streamline processes</li>
+                            <li>Engaged in hands-on development and problem-solving tasks to support organizational
+                                objectives</li>
+                            <li>Worked closely with team members to enhance project outcomes and align deliverables with
+                                company goals</li>
+                        </ul>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Worked with Cloudflare and Dify for workflow automation and chat flow development to streamline processes</li>
-                        <li>Engaged in hands-on development and problem-solving tasks to support organizational objectives</li>
-                        <li>Worked closely with team members to enhance project outcomes and align deliverables with company goals</li>
-                    </ul>
                 </div>
-                <div class="card p-6" data-aos="fade-right">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Springboard Intern</h3>
-                            <p class="text-blue-400">Infosys</p>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Springboard Intern</h3>
+                            <span class="timeline-date">December 2024 - February 2025</span>
                         </div>
-                        <p class="text-gray-400">December 2024 – February 2025</p>
+                        <div class="timeline-company">Infosys</div>
+                        <ul class="timeline-details">
+                            <li>Working on the project AI-Powered Regulatory Compliance Checker for Contracts, focusing
+                                on automating compliance checks</li>
+                            <li>Collaborating with mentor Rahul and team members to meet project milestones</li>
+                            <li>Researching and implementing AI-based methods to enhance contract management efficiency
+                            </li>
+                            <li>Participating in regular mentoring sessions to discuss progress and refine deliverables
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Working on the project <i>AI-Powered Regulatory Compliance Checker for Contracts</i></li>
-                        <li>Collaborating with mentor Rahul and team members to meet project milestones</li>
-                        <li>Researching and implementing AI methods to enhance contract management</li>
-                        <li>Attending regular mentoring sessions to discuss progress and refine deliverables</li>
-                    </ul>
                 </div>
-                <div class="card p-6" data-aos="fade-right">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="timeline-date">July - August 2024</span>
+                        </div>
+                        <div class="timeline-company">First Impression Technologies</div>
+                        <ul class="timeline-details">
+                            <li>Utilized Python for data cleaning, preprocessing, and transformation to ensure data
+                                integrity</li>
+                            <li>Developed data analysis workflows with Pandas and NumPy to derive insights from large
+                                datasets</li>
+                            <li>Created data visualizations using Matplotlib and Seaborn for reporting and presentations
+                            </li>
+                            <li>Collaborated with senior data scientists to solve business problems, focusing on
+                                delivering customer-oriented solutions with measurable business impact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Developer Intern (Full-Stack)</h3>
+                            <span class="timeline-date">June - July 2024</span>
+                        </div>
+                        <div class="timeline-company">Meta Craftlab Private Limited</div>
+                        <ul class="timeline-details">
+                            <li>Contributed to full-stack open source development projects</li>
+                            <li>Collaborated in a virtual work environment using tools like Slack</li>
+                            <li>Gained hands-on experience in software development lifecycle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="flex justify-between items-start mb-4">
-
-                        <div>
-                            <h3 class="text-xl font-bold">Data Science Intern</h3>
-                            <p class="text-blue-400">First Impression Technologies</p>
-                        </div>
-                        <p class="text-gray-400">July – August 2024</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of my technical work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-question-circle"></i>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Utilized Python for data cleaning, preprocessing, and transformation</li>
-                        <li>Developed data analysis workflows with Pandas and NumPy</li>
-                        <li>Created data visualizations using Matplotlib and Seaborn</li>
-                        <li>Collaborated with senior data scientists on business solutions</li>
-                    </ul>
-                </div>
-
-                <div class="card p-6" data-aos="fade-left">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Developer Intern (Full-Stack)</h3>
-                            <p class="text-blue-400">Meta Craftlab Private Limited</p>
+                    <div class="project-content">
+                        <h3>Full-Stack Quiz Application</h3>
+                        <p>Developed and achieved a large-scale, full-stack quiz application designed for scalability
+                            and high performance. Involved in both frontend and backend development using ReactJS for
+                            the user interface, Python for server-side logic, and SQL for data handling and scoreboard
+                            creation. The application was built with a modular architecture, optimized to handle a
+                            growing number of users, real-time quiz participation, and dynamic scoring.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Python</span>
+                            <span>SQL</span>
                         </div>
-                        <p class="text-gray-400">June – July 2024</p>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Contributed to full-stack open source development projects</li>
-                        <li>Collaborated in a virtual work environment using tools like Slack</li>
-                        <li>Gained hands-on experience in software development lifecycle</li>
-                    </ul>
                 </div>
-
-                <div class="card p-6" data-aos="fade-right">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">IT Intern (NLP using Python)</h3>
-                            <p class="text-blue-400">IT-NetworkZ Infosystems Pvt. Ltd.</p>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blockchain Event Verification System</h3>
+                        <p>Developed a secure blockchain-based event verification website for SIT Nagpur. Utilized
+                            MongoDB as database, ensuring reliable and tamper-proof event records. Enhanced security and
+                            accuracy of event management through blockchain technology implementation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>Flask</span>
+                            <span>Blockchain</span>
                         </div>
-                        <p class="text-gray-400">May – July 2024</p>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Completed a 45-day internship focused on NLP using Python</li>
-                        <li>Followed approved modules and specifications under supervision</li>
-                        <li>Contributed to various NLP projects, enhancing technical skills</li>
-                    </ul>
                 </div>
-
-                <!-- Leadership & Activities -->
-                <div class="card p-6" data-aos="fade-left">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Lead</h3>
-                            <p class="text-blue-400">CSI (Computer Society of India), SIT Nagpur</p>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Regulatory Compliance Checker</h3>
+                        <p>Working on an AI-powered system for regulatory compliance checking in contracts. Implementing
+                            AI-based methods to enhance contract management efficiency and automate compliance
+                            verification processes.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>AI/ML</span>
+                            <span>Natural Language Processing</span>
+                            <span>Contract Analysis</span>
                         </div>
-                        <p class="text-gray-400">2024 – 2025</p>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Leading the Computer Society of India chapter at Symbiosis Institute of Technology</li>
-                        <li>Organizing technical events and workshops for students</li>
-                        <li>Coordinating with team members to promote computer science activities</li>
-                    </ul>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="card p-6" data-aos="fade-right">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Vice Chair</h3>
-                            <p class="text-blue-400">IEEE Student Chapter, SIT Nagpur</p>
-                        </div>
-                        <p class="text-gray-400">2023 – 2024</p>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education & Languages</h2>
+                <p class="section-subtitle">Academic background and language proficiency</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Served as Vice Chair of IEEE Student Chapter</li>
-                        <li>Technical member in various university clubs</li>
-                        <li>Headed various competitions at Symbiosis Institute of Technology</li>
-                    </ul>
+                    <div class="education-details">
+                        <h3>Symbiosis International University, Nagpur</h3>
+                        <p class="education-degree">Bachelor's in Technology, Computer Science and Engineering</p>
+                        <p class="education-duration">2022 - Present</p>
+                        <div class="education-grades">
+                            <div class="grade-item">
+                                <span class="grade-label">CGPA:</span>
+                                <span class="grade-value">8.38/10.0</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <div class="languages-card">
+                    <div class="education-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="languages-content">
+                        <h3>Languages</h3>
+                        <div class="language-items">
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <div class="language-proficiency">
+                                    <div class="proficiency-bar">
+                                        <div class="proficiency-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="proficiency-text">Professional</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Hindi</span>
+                                <div class="language-proficiency">
+                                    <div class="proficiency-bar">
+                                        <div class="proficiency-fill" style="width: 100%"></div>
+                                    </div>
+                                    <span class="proficiency-text">Native</span>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Marathi</span>
+                                <div class="language-proficiency">
+                                    <div class="proficiency-bar">
+                                        <div class="proficiency-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="proficiency-text">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-highlights">
+                <h4>Relevant Coursework</h4>
+                <div class="course-tags">
+                    <span class="course-tag">Data Structures & Algorithms</span>
+                    <span class="course-tag">Operating Systems</span>
+                    <span class="course-tag">Computer Networks</span>
+                    <span class="course-tag">Database Management Systems</span>
+                    <span class="course-tag">Machine Learning</span>
+                    <span class="course-tag">Web Technologies</span>
+                    <span class="course-tag">Software Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Volunteering -->
-                <div class="card p-6" data-aos="fade-left">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Volunteer</h3>
-                            <p class="text-blue-400">Kara Foundation</p>
-                        </div>
-                        <p class="text-gray-400">July – November 2024</p>
+    <!-- Key Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Achievements</h2>
+                <p class="section-subtitle">Selected highlights from academics, certifications, leadership and research
+                </p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="achievement-content">
+                        <h3>Academic Excellence</h3>
+                        <p>Maintained a CGPA of <strong>8.38/10.0</strong> while pursuing B.Tech in Computer Science &
+                            Engineering.</p>
+                        <span class="achievement-date">2022 - Present</span>
                     </div>
-                    <ul class="list-disc list-inside space-y-2 text-gray-300">
-                        <li>Participated in three major initiatives: Fight Against Drugs, Women Safety and Empowerment, and Food Donation Drive for Malnourished Kids in the Slums of Nagpur</li>
-                        <li>Dedicated over 120+ hours to community service and project support</li>
-                    </ul>
                 </div>
-    <section id="projects" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Featured Projects</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="card p-6 rounded-lg" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-4">Full-Stack Quiz Application</h3>
-                    <p class="mb-4">Developed and achieved a large-scale, full-stack quiz application designed for scalability and high performance. Involved in both frontend and backend development using ReactJS for the user interface, Python for server-side logic, and SQL for data handling and scoreboard creation.</p>
-                    <p class="text-sm text-gray-400">Technologies: React.js, Python, SQL</p>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="achievement-content">
+                        <h3>Industry Certifications</h3>
+                        <p>Earned 12+ professional certifications including IBM, ServiceNow, Meta, Red Hat and Oracle.
+                        </p>
+                        <span class="achievement-date">2023 - 2025</span>
+                    </div>
                 </div>
-                <div class="card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-4">Blockchain Event Verification System</h3>
-                    <p class="mb-4">Developed a secure blockchain-based event verification website for SIT Nagpur. Utilized MongoDB as database, ensuring reliable and tamper-proof event records. Enhanced security and accuracy of event management.</p>
-                    <p class="text-sm text-gray-400">Technologies: Python, MongoDB, Flask</p>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <div class="achievement-content">
+                        <h3>Leadership</h3>
+                        <p>Served as CSI Lead and IEEE Vice Chair; organised technical events, workshops and hackathons.
+                        </p>
+                        <span class="achievement-date">2023 - 2025</span>
+                    </div>
                 </div>
-                <div class="card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-4">Responsive Web App</h3>
-                    <p class="mb-4">Designed and built a responsive app that evaluates users' EQ/IQ and offers personalized recommendations.</p>
-                    <p class="text-sm text-gray-400">Technologies: HTML, CSS, JavaScript</p>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-flask"></i></div>
+                    <div class="achievement-content">
+                        <h3>Research Publications</h3>
+                        <p>Published research on AI, Blockchain and IoT in peer-reviewed venues.</p>
+                        <span class="achievement-date">2023 - 2024</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="achievement-content">
+                        <h3>Professional Experience</h3>
+                        <p>Completed multiple internships across AI, Data Science, and Full-Stack Development.</p>
+                        <span class="achievement-date">2023 - 2025</span>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div class="achievement-content">
+                        <h3>Community Service</h3>
+                        <p>Contributed 120+ hours to community initiatives and socially impactful programs.</p>
+                        <span class="achievement-date">2024</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white">Research Publications</h2>
-
-            <div class="space-y-8">
-                <!-- Research Card 1: Effect of AI on the Financial Sector -->
-                <div class="card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalPaper1')" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-2">Effect of AI on the Financial Sector</h3>
-                    <p class="text-gray-400 mb-2">ICRITO'2024, Amity University, Noida</p>
-                    <p class="text-gray-300 mb-4">This paper explores the transformative impact of AI on the financial
-                        sector, detailing applications in risk assessment, fraud detection, and customer
-                        personalization.</p>
-
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Achievements</h2>
+                <p class="section-subtitle">Publications and academic contributions</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="research-content">
+                        <h3>Effect of AI on the Financial Sector</h3>
+                        <p class="research-venue">ICRITO'2024, Amity University, Noida</p>
+                        <p class="research-date">March 14-15, 2024</p>
+                        <p class="research-description">This paper explores the transformative impact of AI on the
+                            financial sector, detailing applications in risk assessment, fraud detection, and customer
+                            personalization.</p>
+                    </div>
                 </div>
-
-                <!-- Research Card 2: A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare -->
-                <div class="card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalPaper3')" data-aos="fade-up" data-aos-delay="150">
-                    <h3 class="text-xl font-bold mb-2">A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare</h3>
-                    <p class="text-gray-400 mb-2">IEEE ICSD-2024, Uttaranchal University</p>
-                    <p class="text-gray-300 mb-4">This paper presents a framework for energy-efficient dew computing in smart healthcare applications.</p>
-
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-vote-yea"></i>
+                    </div>
+                    <div class="research-content">
+                        <h3>AI and Blockchain for Decentralized E-Voting System</h3>
+                        <p class="research-venue">ICEEICT 2024, K. Ramakrishnan College of Engineering</p>
+                        <p class="research-date">July 24-26, 2024</p>
+                        <p class="research-description">This paper introduces a secure, decentralized voting system
+                            using AI and blockchain technologies to ensure transparency and privacy in electoral
+                            processes.</p>
+                    </div>
                 </div>
-
-                <!-- Research Card 3: AI and Blockchain for Decentralized E-Voting -->
-                <div class="card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalPaper2')" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-2">AI and Blockchain for Decentralized E-Voting</h3>
-                    <p class="text-gray-400 mb-2">ICEEICT 2024</p>
-                    <p class="text-gray-300 mb-4">This paper introduces a secure, decentralized voting system using AI
-                        and blockchain technologies to ensure transparency and privacy.</p>
-
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="research-content">
+                        <h3>A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare
+                        </h3>
+                        <p class="research-venue">IEEE ICSD-2024, Uttaranchal University</p>
+                        <p class="research-date">May 2-3, 2024</p>
+                        <p class="research-description">This paper presents a framework for energy-efficient dew
+                            computing in smart healthcare applications, focusing on optimizing computational resources.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Modal Structure for Research Papers -->
-        <!-- Modal for Effect of AI on the Financial Sector -->
-        <div id="modalPaper1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Effect of AI on the Financial Sector</h3>
-                <img src="./images/LaxmiKhilnani_research_paper_certificates.jpg"
-                    alt="Certificate for Effect of AI on the Financial Sector" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Certificate of presentation for the research paper titled "Effect of AI on the
-                    Financial Sector" presented at ICRITO'2024, Amity University, Noida.</p>
-                <a href="https://ieeexplore.ieee.org/abstract/document/10522410"
-                    class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Read Full Paper →</a>
-                <button onclick="closeModal('modalPaper1')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <!-- Modal for AI and Blockchain for Decentralized E-Voting -->
-        <div id="modalPaper2" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">AI and Blockchain for Decentralized E-Voting</h3>
-                <img src="./images/blockchainwithAI.png"
-                    alt="Certificate for AI and Blockchain for Decentralized E-Voting" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Certificate of presentation for the research paper titled "AI and Blockchain
-                    for Decentralized E-Voting" presented at ICEEICT 2024.</p>
-                <a href="#research" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Will be Availabe soon to
-                    read online!!</a>
-                <button onclick="closeModal('modalPaper2')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <!-- Modal for A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare -->
-        <div id="modalPaper3" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare</h3>
-                <p class="text-gray-300">Certificate of presentation for the research paper titled "A Framework for Advanced Technology in Energy-Efficient Dew Computing for Smart Healthcare" presented at IEEE ICSD-2024, Uttaranchal University.</p>
-                <a href="#research" class="text-blue-400 hover:text-blue-300 mt-4 inline-block">Will be Available soon to read online!!</a>
-                <button onclick="closeModal('modalPaper3')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
     </section>
 
-    <section id="certificates" class="py-20 bg-gray-900">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white">Certifications</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- ServiceNow CSA -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalCSA')" data-aos="fade-up">
-                    <h3 class="text-lg font-bold mb-2">ServiceNow Certified System Administrator (CSA)</h3>
-                    <p class="text-gray-300">Certification No. 27087295 - Comprehensive system administration certification from ServiceNow.</p>
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership & Extracurricular Activities</h2>
+                <p class="section-subtitle">Leading initiatives and contributing to student community</p>
+            </div>
+            <div class="leadership-grid">
+                <div class="leadership-card">
+                    <div class="leadership-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="leadership-content">
+                        <h3>CSI Lead</h3>
+                        <p class="leadership-organization">Computer Society of India, SIT Nagpur</p>
+                        <p class="leadership-duration">2024 - 2025</p>
+                        <p class="leadership-description">Leading the Computer Society of India chapter at Symbiosis
+                            Institute of Technology, organizing technical events and workshops for students, and
+                            coordinating with team members to promote computer science activities.</p>
+                        <div class="leadership-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Chapter Leadership</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Event Organization</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>Technical Workshops</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- ServiceNow CAD -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalCAD')" data-aos="fade-up" data-aos-delay="50">
-                    <h3 class="text-lg font-bold mb-2">ServiceNow Certified Application Developer (CAD)</h3>
-                    <p class="text-gray-300">Certification No. 27157801 - Advanced application development certification from ServiceNow.</p>
-                </div>
-
-                <!-- Data Science by IBM -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal1')" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-lg font-bold mb-2">Python for Data Science, AI & Development by IBM</h3>
-                    <p class="text-gray-300">Comprehensive data science certification covering statistical analysis, machine learning, and data visualization.</p>
-                </div>
-
-                <!-- Front-End Development by Meta -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal2')" data-aos="fade-up" data-aos-delay="150">
-                    <h3 class="text-lg font-bold mb-2">Introduction to Front-End Development by Meta</h3>
-                    <p class="text-gray-300">Web development fundamentals including HTML, CSS, and JavaScript.</p>
-                </div>
-
-                <!-- Machine Learning for All by University of London -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal4')" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-lg font-bold mb-2">Machine Learning for All by University of London</h3>
-                    <p class="text-gray-300">Fundamentals of machine learning algorithms and applications.</p>
-                </div>
-
-                <!-- Excel Fundamentals by Macquarie University -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal5')" data-aos="fade-up" data-aos-delay="250">
-                    <h3 class="text-lg font-bold mb-2">Excel Fundamentals by Macquarie University</h3>
-                    <p class="text-gray-300">Advanced Excel techniques for data analysis.</p>
-                </div>
-
-                <!-- Red Hat System Administration I -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal6')" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-lg font-bold mb-2">Red Hat System Administration I 9.0</h3>
-                    <p class="text-gray-300">Linux system administration fundamentals.</p>
-                </div>
-
-                <!-- Java Fundamentals by Oracle Academy -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal7')" data-aos="fade-up" data-aos-delay="350">
-                    <h3 class="text-lg font-bold mb-2">Java Fundamentals by Oracle Academy</h3>
-                    <p class="text-gray-300">Core Java programming concepts and practices.</p>
-                </div>
-
-                <!-- Artificial Intelligence Primer by Infosys -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalAI')" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-lg font-bold mb-2">Artificial Intelligence Primer Certification by Infosys</h3>
-                    <p class="text-gray-300">Introductory course on Artificial Intelligence covering key principles and foundational concepts.</p>
-                </div>
-
-                <!-- HackerRank Software Engineer Intern -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modal10')" data-aos="fade-up" data-aos-delay="450">
-                    <h3 class="text-lg font-bold mb-2">HackerRank Software Engineer Intern</h3>
-                    <p class="text-gray-300">Technical assessment certification for software engineering.</p>
-                </div>
-
-                <!-- Java Programming by Infosys Springboard -->
-                <div class="relative card p-6 rounded-lg cursor-pointer hover:bg-gray-700 transition-all duration-300"
-                    onclick="openModal('modalSpringboard')" data-aos="fade-up" data-aos-delay="500">
-                    <h3 class="text-lg font-bold mb-2">Java Programming Fundamentals by Infosys Springboard</h3>
-                    <p class="text-gray-300">Comprehensive Java programming certification covering core concepts and practices.</p>
+                <div class="leadership-card">
+                    <div class="leadership-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="leadership-content">
+                        <h3>IEEE Vice Chair</h3>
+                        <p class="leadership-organization">IEEE Student Chapter, SIT Nagpur</p>
+                        <p class="leadership-duration">2023 - 2024</p>
+                        <p class="leadership-description">Served as Vice Chair of IEEE Student Chapter, acted as
+                            technical member in various university clubs, and headed various competitions at Symbiosis
+                            Institute of Technology.</p>
+                        <div class="leadership-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Competition Management</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users-cog"></i>
+                                <span>Club Coordination</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Technical Leadership</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Modal Structures for Certifications -->
-        <div id="modal1" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Python for Data Science, AI & Development by IBM</h3>
-                <img src="./images/DSbyIbm.png" alt="Python for Data Science, AI & Development by IBM"
-                    class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Comprehensive data science certification covering statistical analysis, machine
-                    learning, and data visualization.</p>
-                <button onclick="closeModal('modal1')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Certifications</h2>
+                <p class="section-subtitle">Industry-recognized certifications and achievements</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/Certified_System_Administrator.png" alt="ServiceNow CSA Certificate"
+                            loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>ServiceNow Certified System Administrator</h3>
+                                <p class="certificate-issuer">ServiceNow</p>
+                                <p class="certificate-id">Certificate No. 27087295</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/CAD.png" alt="ServiceNow CAD Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>ServiceNow Certified Application Developer</h3>
+                                <p class="certificate-issuer">ServiceNow</p>
+                                <p class="certificate-id">Certificate No. 27157801</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/DSbyIbm.png" alt="IBM Data Science Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Python for Data Science, AI & Development</h3>
+                                <p class="certificate-issuer">IBM</p>
+                                <p class="certificate-description">Comprehensive data science certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/frontend.png" alt="Meta Front-End Development Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Introduction to Front-End Development</h3>
+                                <p class="certificate-issuer">Meta</p>
+                                <p class="certificate-description">Web development fundamentals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/Machinelearning.png" alt="Machine Learning Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Machine Learning for All</h3>
+                                <p class="certificate-issuer">University of London</p>
+                                <p class="certificate-description">Foundational machine learning course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/excelFundamentals.png" alt="Excel Fundamentals Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Excel Fundamentals for Data Analysis</h3>
+                                <p class="certificate-issuer">Macquarie University</p>
+                                <p class="certificate-description">Advanced Excel techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/redhat.png" alt="Red Hat Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Red Hat System Administration I 9.0</h3>
+                                <p class="certificate-issuer">Red Hat</p>
+                                <p class="certificate-description">Linux system administration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/oraclejava.png" alt="Oracle Java Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Java Fundamentals</h3>
+                                <p class="certificate-issuer">Oracle Academy</p>
+                                <p class="certificate-description">Core Java programming concepts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/AI_Infosys.png" alt="Infosys AI Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Artificial Intelligence Primer</h3>
+                                <p class="certificate-issuer">Infosys</p>
+                                <p class="certificate-description">AI principles and applications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/hackerrank.png" alt="HackerRank Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>HackerRank Software Engineer Intern</h3>
+                                <p class="certificate-issuer">HackerRank</p>
+                                <p class="certificate-description">Technical assessment certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="./images/blockchainwithAI.png" alt="Blockchain with AI Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <div class="certificate-details">
+                                <h3>Blockchain with AI Integration</h3>
+                                <p class="certificate-issuer">Advanced Technology Certification</p>
+                                <p class="certificate-description">Blockchain and AI convergence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="modal2" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Introduction to Front-End Development by Meta</h3>
-                <img src="./images/frontend.png" alt="Front-End Development by Meta" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Web development fundamentals including HTML, CSS, and JavaScript.</p>
-                <button onclick="closeModal('modal2')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="volunteering">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Community Service</h2>
+                <p class="section-subtitle">Giving back to the community through meaningful initiatives</p>
             </div>
-        </div>
-
-
-        <div id="modal4" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Machine Learning for All by University of London</h3>
-                <img src="./images/Machinelearning.png" alt="Machine Learning for All by University of London"
-                    class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Fundamentals of machine learning algorithms and applications.</p>
-                <button onclick="closeModal('modal4')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modal5" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Excel Fundamentals for Data Analysis by Macquarie University</h3>
-                <img src="./images/excelFundamentals.png" alt="Excel Fundamentals" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Advanced Excel techniques for data analysis.</p>
-                <button onclick="closeModal('modal5')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modal6" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Red Hat System Administration I 9.0</h3>
-                <img src="./images/redhat.png" alt="Red Hat System Administration" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Linux system administration fundamentals.</p>
-                <button onclick="closeModal('modal6')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modal7" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Java Fundamentals by Oracle Academy</h3>
-                <img src="./images/oraclejava.png" alt="Java Fundamentals" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Core Java programming concepts and practices.</p>
-                <button onclick="closeModal('modal7')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modalAI" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Artificial Intelligence Primer Certification by Infosys</h3>
-                <img src="./images/AI_Infosys.png" alt="Artificial Intelligence Primer Certification"
-                    class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">This certification introduces fundamental concepts in Artificial Intelligence,
-                    including machine learning basics, ethical considerations, and future AI applications.</p>
-                <button onclick="closeModal('modalAI')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modal9" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Machine Learning A-Z by Udemy</h3>
-                <img src="/api/placeholder/800/600" alt="Machine Learning A-Z" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Comprehensive machine learning course covering AI, Python & R.</p>
-                <button onclick="closeModal('modal9')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <div id="modal10" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">HackerRank Software Engineer Intern</h3>
-                <img src="./images/hackerrank.png" alt="HackerRank Software Engineer Intern"
-                    class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Technical assessment certification for software engineering.</p>
-                <button onclick="closeModal('modal10')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <!-- Modal for Certified System Administrator -->
-        <div id="modalCSA" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">ServiceNow Certified System Administrator (CSA)</h3>
-                <img src="./images/Certified_System_Administrator.png" alt="ServiceNow CSA" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Successfully completed ServiceNow Certified System Administrator certification with Certificate No. 27087295.</p>
-                <button onclick="closeModal('modalCSA')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <!-- Modal for ServiceNow CAD -->
-        <div id="modalCAD" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">ServiceNow Certified Application Developer (CAD)</h3>
-                <img src="./images/CAD.png" alt="ServiceNow Certified Application Developer (CAD)" class="w-full rounded-lg mb-4">
-                <p class="text-gray-300">Successfully completed ServiceNow Certified Application Developer certification with Certificate No. 27157801.</p>
-                <button onclick="closeModal('modalCAD')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
-            </div>
-        </div>
-
-        <!-- Modal for Java Programming Fundamentals by Infosys Springboard -->
-        <div id="modalSpringboard" class="fixed inset-0 z-50 hidden bg-black bg-opacity-70 flex items-center justify-center">
-            <div class="bg-gray-800 rounded-lg p-6 max-w-md w-full relative">
-                <h3 class="text-2xl font-bold mb-4">Java Programming Fundamentals by Infosys Springboard</h3>
-                <p class="text-gray-300">Comprehensive Java programming certification covering core concepts and best practices from Infosys Springboard.</p>
-                <button onclick="closeModal('modalSpringboard')"
-                    class="absolute top-2 right-2 text-white text-2xl font-semibold">×</button>
+            <div class="volunteering-grid">
+                <div class="volunteering-card">
+                    <div class="volunteering-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="volunteering-content">
+                        <h3>Kara Foundation</h3>
+                        <p class="volunteering-organization">Community Service Organization</p>
+                        <p class="volunteering-duration">July - November 2024</p>
+                        <p class="volunteering-description">Participated in three major initiatives: Fight Against
+                            Drugs, Women Safety and Empowerment, and Food Donation Drive for Malnourished Kids in the
+                            Slums of Nagpur.</p>
+                        <div class="volunteering-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-clock"></i>
+                                <span>120+ Hours Served</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>3 Major Initiatives</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Community Impact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-800">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-12">Get in Touch</h2>
-            <div class="flex justify-center space-x-8">
-                <a href="mailto:laxmikhilnani04@gmail.com" class="hover:text-blue-400 transition duration-300" title="Email">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/laxmi-khilnani20" target="_blank" class="hover:text-blue-400 transition duration-300" title="LinkedIn">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"></path>
-                    </svg>
-                </a>
-                <a href="https://github.com/laxmikhilnani20" target="_blank" class="hover:text-blue-400 transition duration-300" title="GitHub">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"></path>
-                    </svg>
-                </a>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss opportunities and ideas</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>laxmikhilnani04@gmail.com</p>
+                            <a href="mailto:laxmikhilnani04@gmail.com" class="contact-link">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 8237841489</p>
+                            <a href="tel:+918237841489" class="contact-link">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>Professional Network</p>
+                            <a href="https://www.linkedin.com/in/laxmi-khilnani20" target="_blank"
+                                class="contact-link">Connect</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>Code Repository</p>
+                            <a href="https://github.com/laxmikhilnani20" target="_blank" class="contact-link">View
+                                Code</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Twitter</h4>
+                            <p>Tech Updates</p>
+                            <a href="https://twitter.com/laxmikhilnani20" target="_blank"
+                                class="contact-link">Follow</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Portfolio</h4>
+                            <p>Personal Website</p>
+                            <a href="https://laxmikhilnani20.github.io/Resume/" target="_blank"
+                                class="contact-link">Visit Site</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Nagpur, Maharashtra</p>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Availability</h4>
+                            <p>Open to Opportunities</p>
+                            <span class="availability-status">Available for Full-time Roles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 py-6">
-        <div class="container mx-auto px-6 text-center text-gray-400">
-            <p>© 2025 Laxmi Khilnani. All Rights Reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Laxmi Khilnani</h3>
+                    <p>Data Scientist & Full-Stack Developer</p>
+                    <p>Passionate about creating innovative solutions through technology</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#leadership">Leadership</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#research">Research</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <li><a href="#certificates">Certificates</a></li>
+                            <li><a href="#volunteering">Volunteering</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="https://github.com/laxmikhilnani20" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Laxmi Khilnani. All rights reserved. | Built with passion and
+                    precision</p>
+            </div>
         </div>
     </footer>
 
-    <button class="scroll-to-top hidden">↑</button>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 
