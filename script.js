@@ -402,44 +402,9 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     document.head.appendChild(rippleStyle);
 
+    
     // Initialize all functionality
     updateActiveLink();
     toggleScrollToTop();
 });
 
-// Certificate Modal Functions
-function openCertificateModal(imageSrc, title, issuer, description) {
-    const modal = document.getElementById('certificateModal');
-    const modalImage = document.getElementById('modalImage');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalIssuer = document.getElementById('modalIssuer');
-    const modalDescription = document.getElementById('modalDescription');
-    
-    modalImage.src = imageSrc;
-    modalTitle.textContent = title;
-    modalIssuer.textContent = issuer;
-    modalDescription.textContent = description;
-    
-    modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    
-    // Add click outside to close
-    modal.onclick = function(event) {
-        if (event.target === modal) {
-            closeCertificateModal();
-        }
-    };
-}
-
-function closeCertificateModal() {
-    const modal = document.getElementById('certificateModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-// Close modal with Escape key
-document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
-        closeCertificateModal();
-    }
-});
